@@ -1,0 +1,295 @@
+/* reset */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu {
+  margin: 0;
+  padding: 0;
+}
+header,
+footer,
+section,
+article,
+aside,
+nav,
+hgroup,
+address,
+figure,
+figcaption,
+menu,
+details {
+  display: block;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption,
+th {
+  text-align: left;
+  font-weight: normal;
+}
+html,
+body,
+fieldset,
+img,
+iframe,
+abbr {
+  border: 0;
+}
+i,
+cite,
+em,
+var,
+address,
+dfn {
+  font-style: normal;
+}
+[hidefocus],
+summary {
+  outline: 0;
+}
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+  font-size: 100%;
+}
+sup,
+sub {
+  font-size: 83%;
+}
+pre,
+code,
+kbd,
+samp {
+  font-family: inherit;
+}
+q:before,
+q:after {
+  content: none;
+}
+textarea {
+  overflow: auto;
+  resize: none;
+}
+label,
+summary {
+  cursor: default;
+}
+a,
+button {
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+strong,
+b {
+  font-weight: bold;
+}
+del,
+ins,
+u,
+s,
+a,
+a:hover {
+  text-decoration: none;
+}
+body,
+textarea,
+input,
+button,
+select,
+keygen,
+legend {
+  font: 12px/1.14 arial, "Microsoft YaHei";
+  color: #333;
+  outline: 0;
+}
+body {
+  background: #fff;
+}
+a,
+a:hover {
+  color: #333;
+}
+input {
+  border: none;
+  padding: 0;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+* {
+  box-sizing: border-box;
+}
+@media screen and (device-width: 320px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (device-width: 375px) {
+  html {
+    font-size: 18.75px;
+  }
+}
+@media screen and (device-width: 360px) {
+  html {
+    font-size: 18px;
+  }
+}
+body {
+  height: 100%;
+  background-color: #f7f4f1;
+}
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  height: 2.75rem;
+  line-height: 2.75rem;
+  width: 100%;
+  background-color: #ff9b25;
+  font-size: 0.9375rem;
+  padding-left: 1.75rem;
+}
+header a {
+  position: absolute;
+  background-image: url("../images/back.png");
+  background-size: 0.625rem 1rem;
+  width: 0.625rem;
+  height: 1rem;
+  top: 0.875rem;
+  left: 0.625rem;
+}
+header span {
+  color: #ffffff;
+}
+main {
+  color: #555555;
+  font-size: 0.9375rem;
+  height: 100%;
+  margin-top: 3.8125rem;
+  font-weight: normal;
+}
+main ul {
+  margin-bottom: 1.5625rem;
+  background-color: #ffffff;
+}
+main ul li {
+  position: relative;
+  padding: 0 0.8125rem;
+  height: 3.28125rem;
+  line-height: 3.28125rem;
+  border-bottom: 1px solid #dedede;
+}
+main ul li i {
+  position: absolute;
+  right: 0.8125rem;
+  color: #aeaeae;
+}
+main ul li input {
+  text-align: right;
+  color: #aeaeae;
+  font-size: 0.8125rem;
+}
+main ul .li1 input,
+main ul .li2 input {
+  position: absolute;
+  right: 2.1875rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main ul .li1 {
+  border-top: 1px solid #dedede;
+}
+main ul .li2 {
+  line-height: 2.8125rem;
+}
+main ul .li2 b:after {
+  content: '满金额可使用，不包括运费';
+  position: absolute;
+  bottom: -0.625rem;
+  left: 0.8125rem;
+  font-size: 0.625rem;
+  color: #aeaeae;
+}
+main ul .li3 input,
+main ul .li4 input {
+  position: absolute;
+  right: 0.8125rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main > div {
+  padding: 0 0.8125rem;
+  width: 100%;
+  height: 2.5rem;
+}
+main > div span {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid #dedede;
+  background-color: #ff9b25;
+  color: #ffffff;
+  font-size: 1rem;
+}
+main .notice {
+  font-size: 0.75rem;
+  margin-top: 3.5rem;
+  color: #7d7d7d;
+}
+main .notice p {
+  line-height: 1.25rem;
+}

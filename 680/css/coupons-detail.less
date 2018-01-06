@@ -1,0 +1,160 @@
+@import "variable.less";
+@import "reset.less";
+@import "adapter.less";
+body{
+  height: 100%;
+  background-color: @bgColor;
+}
+header{
+  position: fixed;
+  left:0;
+  top:0;
+  z-index: 99;
+  height:88rem/32;
+  line-height: 88rem/32;
+  width:100%;
+  background-color: @bigBgColor;
+  font-size: @headerFontSize;
+  padding-left: 56rem/32;
+  a{
+    position: absolute;
+    background-image: url("../images/back.png");
+    background-size:20rem/32 32rem/32 ;
+    width: 20rem/32;
+    height: 32rem/32;
+    top:28rem/32;
+    left:20rem/32;
+  }
+  span{
+    color:@titleFontColor;
+  }
+  b{
+    color:@titleFontColor;
+    float:right;
+    margin-right: 26rem/32;
+  }
+}
+main{
+  color:@detailFontColor;
+  font-size: 30rem/32;
+  height: 100%;
+  margin-top:122rem/32;
+  font-weight: normal;
+  ul{
+    margin-bottom: 50rem/32;
+    background-color: @titleFontColor;
+
+    li{
+      padding:@contentPadding;
+      height: 105rem/32;
+      line-height: 105rem/32;
+      border-bottom: 1px solid @contentBorderColor;
+    }
+    li i{
+      color:@contentFontColor;
+    }
+    .li1{
+      border-top: 1px solid @contentBorderColor;
+    }
+    .li2>div{
+      height:100%;
+    }
+
+    .li2 div:first-child{
+      position: relative;
+      padding:@contentPadding;
+      padding-left: 0;
+      width: 60%;
+      float: left;
+      border-right: 1px solid @contentBorderColor;
+      line-height: 95rem/32;
+    }
+    .li2 div:first-child:before{
+      content: '不包括运费';
+      position: absolute;
+      left:0;
+      bottom:-20rem/32;
+      font-size: 20rem/32;
+      color:@contentFontColor;
+      //line-height: 24rem/32;
+    }
+    .li2 div:nth-child(2){
+      padding-left: 26rem/32;
+    }
+    .li2 div input{
+      width: 50%;
+      text-align: right;
+      padding-right:10rem/32
+    }
+    .li2 div{
+      width: 40%;
+      float: right;
+    }
+    .li3 input,.li4 input{
+      float: right;
+      text-align: right;
+      color: @contentFontColor;
+      line-height: 104rem/32;
+      font-size: 26rem/32;
+    }
+    .li4{
+      position: relative;
+    }
+    .li4 b{
+      position: absolute;
+      width: 50%;
+      line-height: 95rem/32;
+    }
+    .li4 b:after{
+      content:'此时段下优惠生效';
+      position: absolute;
+      left:0;
+      bottom:-32rem/32;
+      font-size: 20rem/32;
+      color:@contentFontColor;
+    }
+    .li5{
+      line-height: 0;
+    }
+    .li5 b{
+      line-height: 105rem/32 ;
+    }
+    .li5 div{
+      float: right;
+        width: 126rem/32;
+        height: 54rem/32;
+        border:1px solid @contentBorderColor;
+       margin-top: 22rem/32;
+      line-height: 46rem/32 ;
+      padding: 4rem/32;
+      padding-left: 18rem/32;
+    }
+    .li5 div i{
+      display: inline-block;
+      float: right;
+      width: 50%;
+      height: 100%;
+      padding: 5rem/32;
+      border-radius: 5rem/32;
+      background-color: skyblue;
+    }
+  }
+  >div{
+    padding: @contentPadding;
+    width: 100%;
+    height: 80rem/32;
+    span{
+      display: block;
+      width: 100%;
+      height: 80rem/32;
+      line-height: 80rem/32;
+      text-align: center;
+      border-radius: 10rem/32;
+      border:2rem/32 solid @contentBorderColor;
+      background-color: @bigBgColor;
+      color:@titleFontColor;
+      font-size: 32rem/32;
+    }
+  }
+
+}

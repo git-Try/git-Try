@@ -1,0 +1,550 @@
+/* reset */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu {
+  margin: 0;
+  padding: 0;
+}
+header,
+footer,
+section,
+article,
+aside,
+nav,
+hgroup,
+address,
+figure,
+figcaption,
+menu,
+details {
+  display: block;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption,
+th {
+  text-align: left;
+  font-weight: normal;
+}
+html,
+body,
+fieldset,
+img,
+iframe,
+abbr {
+  border: 0;
+}
+i,
+cite,
+em,
+var,
+address,
+dfn {
+  font-style: normal;
+}
+[hidefocus],
+summary {
+  outline: 0;
+}
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+  font-size: 100%;
+}
+sup,
+sub {
+  font-size: 83%;
+}
+pre,
+code,
+kbd,
+samp {
+  font-family: inherit;
+}
+q:before,
+q:after {
+  content: none;
+}
+textarea {
+  overflow: auto;
+  resize: none;
+}
+label,
+summary {
+  cursor: default;
+}
+a,
+button {
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+strong,
+b {
+  font-weight: bold;
+}
+del,
+ins,
+u,
+s,
+a,
+a:hover {
+  text-decoration: none;
+}
+body,
+textarea,
+input,
+button,
+select,
+keygen,
+legend {
+  font: 12px/1.14 arial, "Microsoft YaHei";
+  color: #333;
+  outline: 0;
+}
+body {
+  background: #fff;
+}
+a,
+a:hover {
+  color: #333;
+}
+input {
+  border: none;
+  padding: 0;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+* {
+  box-sizing: border-box;
+}
+@media screen and (device-width: 320px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (device-width: 375px) {
+  html {
+    font-size: 18.75px;
+  }
+}
+@media screen and (device-width: 360px) {
+  html {
+    font-size: 18px;
+  }
+}
+body {
+  height: 100%;
+  background-color: #f7f4f1;
+}
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  height: 2.75rem;
+  line-height: 2.75rem;
+  width: 100%;
+  background-color: #ff9b25;
+  font-size: 0.9375rem;
+  padding-left: 1.75rem;
+}
+header a {
+  position: absolute;
+  background-image: url("../images/back.png");
+  background-size: 0.625rem 1rem;
+  width: 0.625rem;
+  height: 1rem;
+  top: 0.875rem;
+  left: 0.625rem;
+}
+header span {
+  color: #ffffff;
+}
+main {
+  color: #aeaeae;
+  padding: 0 0.8125rem;
+  height: 100%;
+  margin-top: 2.75rem;
+}
+main .title {
+  position: relative;
+  font-size: 0.875rem;
+}
+main .title h4 {
+  height: 2.625rem;
+  line-height: 2.625rem;
+  color: #000000;
+  font-weight: normal;
+}
+main .title span {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aeaeae;
+}
+main .content-bg {
+  position: relative;
+  width: 100%;
+  background-image: url('../images/full-coupons.png');
+  background-size: 18.375rem 9.84375rem;
+  background-repeat: no-repeat;
+  border-radius: 0.3125rem;
+  padding: 1.0625rem;
+  padding-bottom: 0;
+}
+main .content-bg p:first-child {
+  font-size: 1.4375rem;
+  color: #ffffff;
+}
+main .content-bg p:nth-child(2) {
+  font-size: 0.75rem;
+  line-height: 1.75rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 1rem;
+}
+main .content-bg .content-top {
+  overflow: hidden;
+}
+main .content-bg .content-top b {
+  position: relative;
+  padding-left: 1.1875rem;
+  color: #ffffff;
+}
+main .content-bg .content-top b:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 0.6875rem;
+  height: 0.6875rem;
+  background-image: url(../images/click.png);
+  background-size: 0.6875rem 0.6875rem;
+}
+main .content-bg .content-top .sale {
+  position: absolute;
+  width: 4.5625rem;
+  height: 4.5625rem;
+  right: -0.125rem;
+  top: -0.5rem;
+}
+main .content-bg .willStart {
+  float: right;
+  width: 2.9375rem;
+  height: 1.0625rem;
+  background-color: #2a603b;
+  border-radius: 0.15625rem;
+  font-size: 0.6875rem;
+  line-height: 1.125rem;
+  text-align: center;
+}
+main .content-bg ul {
+  height: 2.5625rem;
+  font-size: 0;
+  padding: 0.5625rem 0;
+  margin-top: 0.8125rem;
+}
+main .content-bg ul li {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  font-size: 0.8125rem;
+  line-height: 1.4375rem;
+  text-align: center;
+}
+main .content-bg ul li a {
+  position: relative;
+  display: inline-block;
+}
+main .content-bg ul li .update {
+  position: absolute;
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-image: url(../images/full-coupons-update.png);
+  background-size: 0.75rem 0.75rem;
+  left: -1.375rem;
+  top: 0.34375rem;
+}
+main .content-bg ul li .share {
+  position: absolute;
+  display: inline-block;
+  width: 0.78125rem;
+  height: 0.84375rem;
+  background-image: url(../images/full-coupons-share.png);
+  background-size: 0.78125rem 0.84375rem;
+  left: -1.375rem;
+  top: 0.34375rem;
+}
+main .content-bg ul li:first-child {
+  border-right: 0.03125rem solid #dedede;
+}
+main .content1-bg {
+  position: relative;
+  width: 100%;
+  height: 6.90625rem;
+  background-image: url('../images/coupons.png');
+  background-size: cover;
+  border-radius: 0.3125rem;
+  padding: 0.3125rem 1.0625rem;
+  padding-bottom: 0;
+  color: #ffffff;
+  margin-bottom: 0.9375rem;
+}
+main .content1-bg p:first-child {
+  font-size: 2.8125rem;
+}
+main .content1-bg p:first-child i {
+  font-size: 1.25rem;
+}
+main .content1-bg p:first-child s {
+  font-size: 0.75rem;
+}
+main .content1-bg p:first-child b {
+  padding: 0;
+}
+main .content1-bg p:first-child b:before {
+  content: '';
+  display: none;
+}
+main .content1-bg ul {
+  margin-top: 0.875rem;
+  font-size: 0;
+  margin-bottom: 0.375rem;
+}
+main .content1-bg ul li {
+  display: inline-block;
+  font-size: 0.6875rem;
+  margin-right: 0.46875rem;
+}
+main .content1-bg .click {
+  position: relative;
+  padding-left: 1.1875rem;
+}
+main .content1-bg .click:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 0.6875rem;
+  height: 0.6875rem;
+  background-image: url(../images/click.png);
+  background-size: 0.6875rem 0.6875rem;
+}
+main .content1-bg .willStart {
+  float: right;
+  width: 2.9375rem;
+  height: 1.0625rem;
+  background-color: #6a4279;
+  border-radius: 0.15625rem;
+  font-size: 0.6875rem;
+  line-height: 1.0625rem;
+  text-align: center;
+}
+main .content1-bg img {
+  position: absolute;
+  width: 4.5625rem;
+  height: 4.5625rem;
+  right: -0.125rem;
+  top: -0.5rem;
+}
+main .content2-bg {
+  position: relative;
+  width: 100%;
+  height: 9.8125rem;
+  background-image: url('../images/coupons1.png');
+  background-size: cover;
+  border-radius: 0.3125rem;
+  padding: 0.3125rem 1.0625rem;
+  padding-bottom: 0;
+  color: #ffffff;
+  margin-bottom: 0.9375rem;
+}
+main .content2-bg p:first-child {
+  font-size: 2.8125rem;
+}
+main .content2-bg p:first-child i {
+  font-size: 1.25rem;
+}
+main .content2-bg p:first-child s {
+  font-size: 0.75rem;
+}
+main .content2-bg p:first-child b {
+  padding: 0;
+}
+main .content2-bg p:first-child b:before {
+  content: '';
+  display: none;
+}
+main .content2-bg .textUl {
+  margin-top: 0.875rem;
+  font-size: 0;
+  margin-bottom: 0.4375rem;
+}
+main .content2-bg .textUl li {
+  display: inline-block;
+  font-size: 0.6875rem;
+  margin-right: 0.46875rem;
+}
+main .content2-bg .click {
+  position: relative;
+  padding-left: 1.1875rem;
+}
+main .content2-bg .click:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 0.6875rem;
+  height: 0.6875rem;
+  background-image: url(../images/click.png);
+  background-size: 0.6875rem 0.6875rem;
+}
+main .content2-bg .willStart {
+  float: right;
+  width: 2.9375rem;
+  height: 1.0625rem;
+  background-color: #6a4279;
+  border-radius: 0.15625rem;
+  font-size: 0.6875rem;
+  line-height: 1.0625rem;
+  text-align: center;
+}
+main .content2-bg img {
+  position: absolute;
+  width: 4.5625rem;
+  height: 4.5625rem;
+  right: -0.125rem;
+  top: -0.5rem;
+}
+main .content2-bg .content2-bottom {
+  height: 2.5625rem;
+  font-size: 0;
+  padding: 0.5625rem 0;
+  margin-top: 1.125rem;
+}
+main .content2-bg .content2-bottom li {
+  display: inline-block;
+  width: 33.33333333%;
+  height: 100%;
+  font-size: 0.8125rem;
+  line-height: 1.4375rem;
+  text-align: center;
+  border-right: 0.03125rem solid #dedede;
+}
+main .content2-bg .content2-bottom li a {
+  position: relative;
+  display: inline-block;
+  padding-left: 1.375rem;
+}
+main .content2-bg .content2-bottom li .delete {
+  position: absolute;
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-image: url(../images/coupons-ing-delete.png);
+  background-size: 0.75rem 0.75rem;
+  left: 0;
+  top: 0.34375rem;
+}
+main .content2-bg .content2-bottom li .preview {
+  position: absolute;
+  display: inline-block;
+  width: 1rem;
+  height: 0.5rem;
+  background-image: url(../images/coupon-ing-preview.png);
+  background-size: 1rem 0.5rem;
+  left: 0;
+  top: 0.5rem;
+}
+main .content2-bg .content2-bottom li .share {
+  position: absolute;
+  display: inline-block;
+  width: 0.78125rem;
+  height: 0.84375rem;
+  background-image: url(../images/coupon-ing-share.png);
+  background-size: 0.78125rem 0.84375rem;
+  left: 0;
+  top: 0.34375rem;
+}
+main .content2-bg .content2-bottom li:last-child {
+  border-right: none;
+}
+main .coupons1 .content {
+  width: 100%;
+  height: 7rem;
+  border: 3px dashed #dedede;
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 1.5625rem;
+}
+main .coupons1 .content a {
+  display: block;
+  margin: 1.15625rem auto;
+  margin-bottom: 0;
+  width: 3.25rem;
+  height: 3.25rem;
+  background: url("../images/add.png");
+  background-size: 3.25rem 3.25rem;
+}
+main .coupons1 .content p {
+  line-height: 1.75rem;
+  font-size: 0.75rem;
+}
+main .notice {
+  font-size: 0.75rem;
+  margin-top: 3.5rem;
+  margin-bottom: 1.5625rem;
+}
+main .notice p {
+  line-height: 1.25rem;
+}

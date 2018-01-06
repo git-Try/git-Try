@@ -1,0 +1,382 @@
+@import "variable.less";
+@import "reset.less";
+@import "adapter.less";
+body{
+  height: 100%;
+  background-color: @bgColor;
+  //overflow: hidden;
+}
+header{
+  position: fixed;
+  left:0;
+  top:0;
+  z-index: 99;
+  height:88rem/32;
+  line-height: 88rem/32;
+  width:100%;
+  background-color: @bigBgColor;
+  font-size: @headerFontSize;
+  padding-left: 56rem/32;
+  a{
+    position: absolute;
+    background-image: url("../images/back.png");
+    background-size:20rem/32 32rem/32 ;
+    width: 20rem/32;
+    height: 32rem/32;
+    top:28rem/32;
+    left:20rem/32;
+  }
+  span{
+    color:@titleFontColor;
+  }
+}
+main{
+  color:@contentFontColor;
+  padding:@contentPadding;
+  height: 100%;
+  margin-top:88rem/32;
+  .title{
+    position: relative;
+    font-size:@contentFontSize;
+    h4{
+      height:84rem/32;
+      line-height: 84rem/32;
+      color: @mainColor;
+      font-weight: normal;
+    }
+    span{
+      position: absolute;
+      right:0;
+      top:50%;
+      transform: translateY(-50%);
+      color:@contentFontColor;
+    }
+  }
+  .content-bg{
+    position: relative;
+    width: 100%;
+    background-image: url('../images/full-coupons.png');
+    background-size: 588rem/32 315rem/32;
+    background-repeat:no-repeat;
+    border-radius: 10rem/32;
+    padding:34rem/32;
+    padding-bottom: 0;
+    p:first-child{
+      font-size: 46rem/32;
+      color:@titleFontColor;
+    }
+    p:nth-child(2){
+      font-size: 24rem/32;
+      line-height: 56rem/32;
+      color:rgba(255,255,255,0.6);
+      margin-bottom:32rem/32;
+    }
+    .content-top{
+      //position: relative;
+      overflow: hidden;
+      b{
+        position: relative;
+        padding-left: 38rem/32;
+        color:@titleFontColor;
+      }
+      b:before{
+        content:'';
+        position: absolute;
+        left:0;
+        width:22rem/32;
+        height:22rem/32;
+        background-image: url(../images/click.png);
+        background-size: 22rem/32 22rem/32;
+      }
+      .sale{
+        position: absolute;
+        width: 146rem/32;
+        height: 146rem/32;
+        right: -4rem/32;
+        top:-16rem/32;
+      }
+    }
+    .willStart{
+     float:right;
+      width: 94rem/32;
+      height: 34rem/32;
+      background-color: #2a603b;
+      border-radius: 5rem/32;
+      font-size: 22rem/32;
+      line-height: 36rem/32;
+      text-align: center;
+    }
+
+    ul{
+      height:82rem/32;
+      font-size: 0;
+      padding:18rem/32 0;
+      margin-top:26rem/32;
+      li{
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+        font-size: 26rem/32;
+        line-height: 46rem/32;
+        text-align: center;
+
+        a{
+          position: relative;
+          display: inline-block;
+        }
+        .update{
+          position: absolute;
+          display: inline-block;
+          width:24rem/32 ;
+          height: 24rem/32;
+          background-image: url(../images/full-coupons-update.png);
+          background-size:24rem/32 24rem/32;
+          left:-44rem/32;
+          top:11rem/32;
+        }
+        .share{
+          position: absolute;
+          display: inline-block;
+          width:25rem/32 ;
+          height: 27rem/32;
+          background-image: url(../images/full-coupons-share.png);
+          background-size:25rem/32 27rem/32;
+          left:-44rem/32;
+          top:11rem/32;
+        }
+
+      }
+      li:first-child{
+        border-right:1rem/32 solid @contentBorderColor;
+      }
+    }
+    }
+
+  .content1-bg{
+    position: relative;
+    width: 100%;
+    height:221rem/32;
+    background-image: url('../images/coupons.png');
+    background-size: cover;
+    border-radius: 10rem/32;
+    padding: 10rem/32 34rem/32;
+    padding-bottom: 0;
+    color:@titleFontColor;
+    margin-bottom: 30rem/32;
+
+    p:first-child{
+      font-size: 90rem/32;
+      i{
+        font-size: 40rem/32;
+      }
+      s{
+        font-size: 24rem/32;
+      }
+      b{
+        padding: 0;
+      }
+      b:before{
+        content:'';
+        display: none;
+      }
+    }
+    ul{
+      margin-top: 28rem/32;
+      font-size: 0;
+      margin-bottom: 12rem/32;
+      li{
+        display: inline-block;
+        font-size: 22rem/32;
+        margin-right: 15rem/32;
+      }
+    }
+    .click{
+      position: relative;
+      padding-left: 38rem/32;
+    }
+    .click:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 0.6875rem;
+      height: 0.6875rem;
+      background-image: url(../images/click.png);
+      background-size: 0.6875rem 0.6875rem;
+    }
+    .willStart{
+      float:right;
+      width: 94rem/32;
+      height: 34rem/32;
+      background-color: #6a4279;
+      border-radius: 5rem/32;
+      font-size: 22rem/32;
+      line-height: 34rem/32;
+      text-align: center;
+    }
+    img{
+      position: absolute;
+      width: 4.5625rem;
+      height: 4.5625rem;
+      right: -0.125rem;
+      top: -0.5rem;
+    }
+  }
+  .content2-bg{
+    position: relative;
+    width: 100%;
+    height:314rem/32;
+    background-image: url('../images/coupons1.png');
+    background-size: cover;
+    border-radius: 10rem/32;
+    padding: 10rem/32 34rem/32;
+    padding-bottom: 0;
+    color:@titleFontColor;
+    margin-bottom: 30rem/32;
+
+    p:first-child{
+      font-size: 90rem/32;
+      i{
+        font-size: 40rem/32;
+      }
+      s{
+        font-size: 24rem/32;
+      }
+      b{
+        padding: 0;
+      }
+      b:before{
+        content:'';
+        display: none;
+      }
+    }
+    .textUl{
+      margin-top: 28rem/32;
+      font-size: 0;
+      margin-bottom: 14rem/32;
+      li{
+        display: inline-block;
+        font-size: 22rem/32;
+        margin-right: 15rem/32;
+      }
+    }
+    .click{
+      position: relative;
+      padding-left: 38rem/32;
+    }
+    .click:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 0.6875rem;
+      height: 0.6875rem;
+      background-image: url(../images/click.png);
+      background-size: 0.6875rem 0.6875rem;
+    }
+    .willStart{
+      float:right;
+      width: 94rem/32;
+      height: 34rem/32;
+      background-color: #6a4279;
+      border-radius: 5rem/32;
+      font-size: 22rem/32;
+      line-height: 34rem/32;
+      text-align: center;
+    }
+    img{
+      position: absolute;
+      width: 4.5625rem;
+      height: 4.5625rem;
+      right: -0.125rem;
+      top: -0.5rem;
+    }
+    .content2-bottom{
+      height:82rem/32;
+      font-size: 0;
+      padding:18rem/32 0;
+      margin-top:36rem/32;
+      li{
+        display: inline-block;
+        width: 100%/3;
+        height: 100%;
+        font-size: 26rem/32;
+        line-height: 46rem/32;
+        text-align: center;
+        border-right:1rem/32 solid @contentBorderColor;
+
+        a{
+          position: relative;
+          display: inline-block;
+          padding-left:44rem/32 ;
+        }
+        .delete{
+          position: absolute;
+          display: inline-block;
+          width:24rem/32 ;
+          height: 24rem/32;
+          background-image: url(../images/coupons-ing-delete.png);
+          background-size:24rem/32 24rem/32;
+          left:0;
+          top:11rem/32;
+        }
+        .preview{
+          position: absolute;
+          display: inline-block;
+          width:32rem/32 ;
+          height: 16rem/32;
+          background-image: url(../images/coupon-ing-preview.png);
+          background-size:32rem/32 16rem/32;
+          left:0;
+          top:16rem/32;
+        }
+        .share{
+          position: absolute;
+          display: inline-block;
+          width:25rem/32 ;
+          height: 27rem/32;
+          background-image: url(../images/coupon-ing-share.png);
+          background-size:25rem/32 27rem/32;
+          left:0;
+          top:11rem/32;
+        }
+
+      }
+      li:last-child{
+        border-right:none;
+      }
+    }
+  }
+  .coupons1{
+    .content{
+      width: 100%;
+      height: 224rem/32;
+      border:3px dashed @contentBorderColor;
+      text-align: center;
+      background-color: #fff;
+      margin-bottom: 50rem/32;
+      a{
+        display: block;
+        margin: 37rem/32 auto;
+        margin-bottom: 0;
+        width: 104rem/32;
+        height: 104rem/32;
+        background: url("../images/add.png");
+        background-size: 104rem/32 104rem/32;
+      }
+      p{
+        line-height: 56rem/32;
+        font-size: 24rem/32;
+      }
+    }
+
+  }
+
+  .notice{
+    font-size: 24rem/32;
+    margin-top: 112rem/32;
+    margin-bottom: 50rem/32;
+    p{
+      line-height: 40rem/32;
+    }
+  }
+}
+
